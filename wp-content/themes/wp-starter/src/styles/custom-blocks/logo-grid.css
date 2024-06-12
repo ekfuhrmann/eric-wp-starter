@@ -1,0 +1,20 @@
+@layer components {
+	.acf-block-logo-grid {
+		& figure {
+			@apply flex;
+			@apply aspect-5/3;
+			@apply basis-1/2-gap lg:basis-1/4-gap;
+
+			& img {
+				@apply block;
+				@apply h-full max-w-full;
+				@apply object-contain;
+			}
+		}
+
+		/* Fix for image sizing in editor */
+		& .components-resizable-box__container {
+			@apply !shrink;
+		}
+	}
+}

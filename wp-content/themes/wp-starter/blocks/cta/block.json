@@ -1,0 +1,56 @@
+{
+  "name": "cta",
+  "title": "Call to Action",
+  "description": "Displays the Call to Action Component.",
+  "icon": "align-center",
+  "category": "components",
+  "textdomain": "wp-starter",
+  "keywords": ["cta", "button", "heading", "section"],
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": "full"
+    },
+    "style": {
+      "type": "object",
+      "default": {
+        "spacing": {
+          "padding": {
+            "top": "var:preset|spacing|30",
+            "bottom": "var:preset|spacing|30"
+          }
+        },
+        "background": {
+          "backgroundSize": "cover",
+          "backgroundPosition": "50% 50%"
+        }
+      }
+    }
+  },
+  "supports": {
+    "jsx": true,
+    "mode": false,
+    "alignWide": true,
+    "color": {
+      "background": true
+    },
+    "background": {
+      "backgroundImage": true,
+      "backgroundSize": true
+    },
+    "layout": {
+      "default": {
+        "type": "constrained",
+        "justifyContent": "center"
+      },
+      "allowOrientation": false,
+      "allowCustomContentAndWideSize": false
+    },
+    "spacing": {
+      "padding": ["top", "bottom"]
+    }
+  },
+  "acf": {
+    "mode": "preview"
+  }
+}

@@ -1,0 +1,31 @@
+@layer base {
+	[x-cloak] {
+		@apply !hidden;
+	}
+
+	ul {
+		@apply list-disc;
+
+		li {
+			@apply list-inside;
+		}
+	}
+
+	ol {
+		@apply list-decimal;
+
+		li {
+			@apply list-inside;
+		}
+	}
+}
+
+@layer components {
+	/*
+		This adds a bit of space between blocks on a page.
+		Should be adjusted or removed as needed per project.
+	*/
+	.entry-content > *:not(:first-child) {
+		@apply mt-12;
+	}
+}

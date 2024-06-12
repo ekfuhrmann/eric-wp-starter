@@ -1,0 +1,27 @@
+{
+  "name": "navigation-container",
+  "title": "Navigation Container",
+  "description": "Wrap navigation items in a container with built in toggle.",
+  "icon": "menu-alt3",
+  "textdomain": "wp-starter",
+  "keywords": [
+    "menu",
+    "mobile",
+    "group",
+    "toggle"
+  ],
+  "supports": {
+    "jsx": true,
+    "layout": {
+      "default": {
+        "type": "flex",
+        "justifyContent": "left"
+      },
+      "allowOrientation": true,
+      "allowCustomContentAndWideSize": false
+    }
+  },
+  "acf": {
+    "mode": "preview"
+  }
+}

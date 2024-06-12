@@ -1,0 +1,15 @@
+@layer components {
+	.wp-block,
+	.acf-block {
+		/* Add in custom bg colors here */
+		&[class*='has-dark'] {
+			> *:not(.has-text-color) {
+				@apply text-white;
+			}
+
+			.wp-block-heading:not(.has-text-color) {
+				@apply text-white;
+			}
+		}
+	}
+}

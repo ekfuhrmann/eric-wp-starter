@@ -1,0 +1,31 @@
+@layer components {
+	.wp-block,
+	.acf-block {
+		.wp-block-button {
+			.wp-block-button__link {
+				@apply btn-contained;
+			}
+
+			&.is-style-outline {
+				.wp-block-button__link {
+					@apply btn-outlined;
+				}
+			}
+		}
+
+		/* Light versions for dark mode*/
+		&[class*='has-dark'] {
+			.wp-block-button {
+				.wp-block-button__link {
+					@apply btn-contained-light;
+				}
+
+				&.is-style-outline {
+					.wp-block-button__link {
+						@apply btn-outlined-light;
+					}
+				}
+			}
+		}
+	}
+}
